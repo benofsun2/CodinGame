@@ -10,7 +10,7 @@ namespace Codingame
     {
         static void Main(string[] args)
         {
-            Codingame.Easy.SolutionE1.MainFunction();
+            Codingame.Medium.SolutionM3.Main(args);
             
         }
     }

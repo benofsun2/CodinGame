@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Codingame.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +54,8 @@
     <Compile Include="Easy\Onboarding.cs" />
     <Compile Include="Easy\PowerOfThor.cs" />
     <Compile Include="Easy\SkynetChasm.cs" />
+    <Compile Include="Medium\APUInitPhase.cs" />
+    <Compile Include="Medium\MarsLanderLvl2.cs" />
     <Compile Include="Medium\SkynetTheVirus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
