@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Codingame.Medium
 {
+
+    // based on Fabrizio Cucci solution found on Github
     class SolutionM3
     {
         private const int EPSILON = 5;
