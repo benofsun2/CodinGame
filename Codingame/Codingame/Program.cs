@@ -10,8 +10,8 @@ namespace Codingame
     {
         static void Main(string[] args)
         {
-            Codingame.Medium.SolutionM3.Main(args);
-            
+            //Codingame.Medium.SolutionM3.Main(args);
+            Codingame.Hard.TheParanoidAndroidOSF.Main(args);
         }
     }
 }
