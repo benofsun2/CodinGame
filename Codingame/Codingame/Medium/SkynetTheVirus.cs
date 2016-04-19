@@ -9,11 +9,11 @@ using System.Collections.Generic;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-namespace Codingame.Medium
+namespace Codingame.Medium.SkynetTheVirus
 {
-    class SolutionM1
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
             string[] inputs;
             inputs = Console.ReadLine().Split(' ');

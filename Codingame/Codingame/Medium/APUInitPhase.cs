@@ -9,11 +9,11 @@ using System.Collections.Generic;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-namespace Codingame.Medium
+namespace Codingame.Medium.APUInitPhase
 {
-    class SolutionM2
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
             int width = int.Parse(Console.ReadLine()); // the number of cells on the X axis
             int height = int.Parse(Console.ReadLine()); // the number of cells on the Y axis

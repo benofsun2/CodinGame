@@ -9,11 +9,11 @@ using System.Collections.Generic;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-namespace Codingame.Easy
+namespace Codingame.Easy.ChuckNorris
 {
-    class SolutionE7
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
             string MESSAGE = Console.ReadLine();
 

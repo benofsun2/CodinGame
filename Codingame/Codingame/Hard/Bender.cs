@@ -6,13 +6,13 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-namespace Codingame.Hard
+namespace Codingame.Hard.Bender
 {
     /**
      * Auto-generated code below aims at helping you parse
      * the standard input according to the problem statement.
      **/
-    public class BenderSolution
+    public class Solution
     {
         public static void Main(string[] args)
         {

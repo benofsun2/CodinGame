@@ -8,11 +8,11 @@ using System.Text;
  * Hint:To protect the planet, you can implement the pseudo-code provided in the statement, below the player.
  **/
 
-namespace Codingame.Easy
+namespace Codingame.Easy.Onboarding
 {
-    class SolutionE0
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
 
             // game loop

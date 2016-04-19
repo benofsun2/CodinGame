@@ -10,11 +10,11 @@ using System.Collections.Generic;
  * the standard input according to the problem statement.
  **/
 
-namespace Codingame.Easy
+namespace Codingame.Easy.SkynetChasm
 {
-    class SolutionE3
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
             int road = int.Parse(Console.ReadLine()); // the length of the road before the gap.
             int gap = int.Parse(Console.ReadLine()); // the length of the gap.

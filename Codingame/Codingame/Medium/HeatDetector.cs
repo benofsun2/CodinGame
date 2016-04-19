@@ -9,7 +9,7 @@ using System.Collections;
 
 namespace Codingame.Medium.HeatDetector
 {
-    public class Player
+    public class Solution
     {
         private static bool local = false;
 

@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Core.cs" />
     <Compile Include="Contest\CodeVsZombies.cs" />
     <Compile Include="Easy\ASCIIArt.cs" />
     <Compile Include="Easy\ChuckNorris.cs" />
@@ -74,6 +75,8 @@
     <Compile Include="Easy\PowerOfThor.cs" />
     <Compile Include="Easy\SkynetChasm.cs" />
     <Compile Include="Hard\Bender.cs" />
+    <Compile Include="Hard\SuperComputer.cs" />
+    <Compile Include="Hard\TheLabyrinth.cs" />
     <Compile Include="Hard\TheParanoidAndroidOSF.cs" />
     <Compile Include="Medium\APUInitPhase.cs" />
     <Compile Include="Medium\HeatDetector.cs" />

@@ -9,11 +9,11 @@ using System.Collections.Generic;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-namespace Codingame.Easy
+namespace Codingame.Easy.Temperatures
 {
-    class SolutionE5
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine()); // the number of temperatures to analyse
             string temps = Console.ReadLine(); // the n temperatures expressed as integers ranging from -273 to 5526

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codingame.Medium
+namespace Codingame.Medium.MarsLanderLvl2
 {
 
     // based on Fabrizio Cucci solution found on Github
-    class SolutionM3
+    class Solution
     {
         private const int EPSILON = 5;
         private const int MAX_VERTICAL_SPEED = 40;

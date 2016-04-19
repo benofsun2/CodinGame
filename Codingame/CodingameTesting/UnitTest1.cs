@@ -31,7 +31,7 @@ namespace CodingameTesting
                     Console.SetOut(sw);
                     //Console.SetIn(sr);
 
-                    Codingame.Hard.BenderSolution.Main(_td.testdata2.ToArray());
+                    Codingame.Hard.Bender.Solution.Main(_td.testdata2.ToArray());
 
                     var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
 
@@ -49,7 +49,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
                 
-                Codingame.Hard.BenderSolution.Main(_td.testdata2.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata2.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|EAST|EAST|EAST|SOUTH|EAST|SOUTH|SOUTH|SOUTH"));
@@ -64,7 +64,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
                 
-                Codingame.Hard.BenderSolution.Main(_td.testdata3.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata3.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|EAST|EAST|EAST|NORTH|NORTH|NORTH|NORTH|NORTH"));
@@ -79,7 +79,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
                 
-                Codingame.Hard.BenderSolution.Main(_td.testdata4.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata4.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("EAST|EAST|EAST|EAST|SOUTH|SOUTH|SOUTH|SOUTH"));
@@ -94,7 +94,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
                
-                Codingame.Hard.BenderSolution.Main(_td.testdata5.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata5.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|EAST|EAST|EAST|EAST|EAST|EAST|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|WEST|WEST|WEST|WEST|SOUTH|SOUTH"));
@@ -109,7 +109,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
 
-                Codingame.Hard.BenderSolution.Main(_td.testdata6.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata6.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|SOUTH|SOUTH|EAST|EAST|EAST|EAST|EAST|EAST"));
@@ -123,7 +123,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
 
-                Codingame.Hard.BenderSolution.Main(_td.testdata7.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata7.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|SOUTH|SOUTH|WEST|WEST|WEST|WEST|WEST|WEST|WEST|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|EAST|EAST|EAST|EAST|EAST|EAST|EAST|SOUTH|SOUTH"));
@@ -137,7 +137,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
 
-                Codingame.Hard.BenderSolution.Main(_td.testdata8.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata8.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|SOUTH|EAST|EAST|EAST|EAST|EAST|EAST|EAST|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH"));
@@ -151,7 +151,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
 
-                Codingame.Hard.BenderSolution.Main(_td.testdata9.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata9.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|SOUTH|SOUTH|EAST|EAST|EAST|EAST|NORTH|NORTH|WEST|WEST|WEST|WEST|SOUTH|SOUTH|SOUTH|SOUTH|EAST|EAST|EAST|EAST|EAST"));
@@ -165,7 +165,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
 
-                Codingame.Hard.BenderSolution.Main(_td.testdata10.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata10.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|WEST|WEST|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|NORTH|EAST|EAST|EAST|EAST|EAST|EAST|EAST|EAST|EAST|EAST|EAST|EAST|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|WEST|WEST|WEST|WEST|WEST|WEST|SOUTH|SOUTH|SOUTH|EAST|EAST|EAST"));
@@ -179,7 +179,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
 
-                Codingame.Hard.BenderSolution.Main(_td.testdata11.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata11.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("LOOP"));
@@ -193,7 +193,7 @@ namespace CodingameTesting
             {
                 Console.SetOut(sw);
 
-                Codingame.Hard.BenderSolution.Main(_td.testdata12.ToArray());
+                Codingame.Hard.Bender.Solution.Main(_td.testdata12.ToArray());
 
                 var result = Regex.Replace(sw.ToString(), @"\r\n", "|");
                 Assert.IsTrue(result.Contains("SOUTH|SOUTH|SOUTH|SOUTH|EAST|EAST|EAST|EAST|NORTH|NORTH|NORTH|NORTH|WEST|WEST|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|SOUTH|EAST|EAST|EAST|NORTH|WEST|" +

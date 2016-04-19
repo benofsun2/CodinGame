@@ -12,11 +12,11 @@ using System.Collections.Generic;
  * Hint: You can use the debug stream to print initialTX and initialTY, if Thor seems not follow your orders.
  **/
 
-namespace Codingame.Easy
+namespace Codingame.Easy.PowerOfThor
 {
-    class SolutionE1
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
             string[] inputs = Console.ReadLine().Split(' ');
             int lightX = int.Parse(inputs[0]); // the X position of the light of power

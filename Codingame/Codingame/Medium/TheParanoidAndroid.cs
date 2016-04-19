@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codingame.Medium
+namespace Codingame.Medium.TheParanoidAndroid
 {
-    class TheParanoidAndroid
+    class Solution
     {
         private static void OutputErrorVars(string[] vars)
         {

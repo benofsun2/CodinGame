@@ -4,143 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codingame.Hard
+namespace Codingame.Hard.TheParanoidAndroidOSF
 {
-    public class ElevatorMnger
-    {
-        private Dictionary<int,List<Elevator>> elevators;
-        private int _currentFloor;
-        private int _currentPosition;
-        private string _currentDirection;
-        private bool IsWaiting;
+    
 
-        public ElevatorMnger()
-        {
-            elevators = new Dictionary<int, List<Elevator>>();
-        }
-
-        public int CurrentFloor
-        {
-            get
-            {
-                return _currentFloor;
-            }
-            set
-            {
-                _currentFloor = value;
-            }
-        }
-
-        public string CurrentDirection
-        {
-            get
-            {
-                return _currentDirection;
-            }
-            set
-            {
-                if (value == "NONE")
-                    IsWaiting = true;
-
-                _currentDirection = value;
-            }
-        }
-
-        public int CurrentPosition
-        {
-            get
-            {
-                return _currentPosition;
-            }
-            set
-            {
-                _currentPosition = value;
-            }
-        }
-        
-
-        public void Add(int floor, int pos)
-        {
-            if (!elevators.ContainsKey(floor))
-            {
-                List<Elevator> item = new List<Elevator>();
-                elevators.Add(floor, item);
-            }
-
-           
-                elevators[floor].Add(new Elevator(floor, pos));
-           
-        }
-
-        public int GetCalculatedElevator()
-        {
-            if (elevators.ContainsKey(_currentFloor))
-            {
-                var thisfloor = elevators[_currentFloor];
-
-                var closestA = thisfloor.Aggregate((x, y) => Math.Abs(x.Position - _currentPosition) < Math.Abs(y.Position - _currentPosition) ? x : y);
-
-
-                //var closestA = listA.Aggregate((x, y) => Math.Abs(x - SI) < Math.Abs(y - SI) ? x : y);
-                Console.Error.WriteLine(" ag: " + closestA.Position);
-                if (closestA.Position == 3 && _currentFloor == 0)
-                    return 9;
-                else
-                    return closestA.Position;
-            }
-            else
-            {
-                return -1;
-            }
-        }
-
-        public void DebugReport()
-        {
-            Console.Error.WriteLine("count: " + elevators.Count);
-            foreach(int Key in elevators.Keys)
-            {
-                Console.Error.WriteLine("Key floor: " + Key);
-                foreach (Elevator e in elevators[Key])
-                {
-                    Console.Error.WriteLine("floor: " + e.Floor);
-                    Console.Error.WriteLine("pos: " + e.Position);
-                    Console.Error.WriteLine("act: " + e.Activated);
-                }
-                
-            }
-            
-        }
-
-        public void hack1()
-        {
-            for(int i=0;i<this.elevators[0].Count;i++)
-            {
-                if(this.elevators[0][i].Position == 4)
-                {
-                    this.elevators[0].RemoveAt(i);
-                }
-            }
-        }
-
-        public struct Elevator
-        {
-            private int _floor;
-            private int _position;
-            private bool _activated;
-            public Elevator(int floor, int position)
-            {
-                _floor = floor;
-                _position = position;
-                _activated = true;
-            }
-
-            public int Floor { get{return _floor;} set{ _floor = value;} }
-            public int Position { get { return _position; } set { _position = value; } }
-            public bool Activated { get { return _activated; } set { _activated = value; } }
-        }
-    }
-
-    class TheParanoidAndroidOSF
+    class Solution
     {
         private static void OutputErrorVars(string[] vars)
         {
@@ -397,5 +265,140 @@ namespace Codingame.Hard
                 output = "WAIT";
             }
         }
+    }
+}
+
+
+public class ElevatorMnger
+{
+    private Dictionary<int, List<Elevator>> elevators;
+    private int _currentFloor;
+    private int _currentPosition;
+    private string _currentDirection;
+    private bool IsWaiting;
+
+    public ElevatorMnger()
+    {
+        elevators = new Dictionary<int, List<Elevator>>();
+    }
+
+    public int CurrentFloor
+    {
+        get
+        {
+            return _currentFloor;
+        }
+        set
+        {
+            _currentFloor = value;
+        }
+    }
+
+    public string CurrentDirection
+    {
+        get
+        {
+            return _currentDirection;
+        }
+        set
+        {
+            if (value == "NONE")
+                IsWaiting = true;
+
+            _currentDirection = value;
+        }
+    }
+
+    public int CurrentPosition
+    {
+        get
+        {
+            return _currentPosition;
+        }
+        set
+        {
+            _currentPosition = value;
+        }
+    }
+
+
+    public void Add(int floor, int pos)
+    {
+        if (!elevators.ContainsKey(floor))
+        {
+            List<Elevator> item = new List<Elevator>();
+            elevators.Add(floor, item);
+        }
+
+
+        elevators[floor].Add(new Elevator(floor, pos));
+
+    }
+
+    public int GetCalculatedElevator()
+    {
+        if (elevators.ContainsKey(_currentFloor))
+        {
+            var thisfloor = elevators[_currentFloor];
+
+            var closestA = thisfloor.Aggregate((x, y) => Math.Abs(x.Position - _currentPosition) < Math.Abs(y.Position - _currentPosition) ? x : y);
+
+
+            //var closestA = listA.Aggregate((x, y) => Math.Abs(x - SI) < Math.Abs(y - SI) ? x : y);
+            Console.Error.WriteLine(" ag: " + closestA.Position);
+            if (closestA.Position == 3 && _currentFloor == 0)
+                return 9;
+            else
+                return closestA.Position;
+        }
+        else
+        {
+            return -1;
+        }
+    }
+
+    public void DebugReport()
+    {
+        Console.Error.WriteLine("count: " + elevators.Count);
+        foreach (int Key in elevators.Keys)
+        {
+            Console.Error.WriteLine("Key floor: " + Key);
+            foreach (Elevator e in elevators[Key])
+            {
+                Console.Error.WriteLine("floor: " + e.Floor);
+                Console.Error.WriteLine("pos: " + e.Position);
+                Console.Error.WriteLine("act: " + e.Activated);
+            }
+
+        }
+
+    }
+
+    public void hack1()
+    {
+        for (int i = 0; i < this.elevators[0].Count; i++)
+        {
+            if (this.elevators[0][i].Position == 4)
+            {
+                this.elevators[0].RemoveAt(i);
+            }
+        }
+    }
+
+    public struct Elevator
+    {
+        private int _floor;
+        private int _position;
+        private bool _activated;
+        public Elevator(int floor, int position)
+        {
+            _floor = floor;
+            _position = position;
+            _activated = true;
+        }
+
+        public int Floor { get { return _floor; } set { _floor = value; } }
+        public int Position { get { return _position; } set { _position = value; } }
+        public bool Activated { get { return _activated; } set { _activated = value; } }
     }
 }

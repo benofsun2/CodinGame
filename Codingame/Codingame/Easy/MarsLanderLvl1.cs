@@ -9,11 +9,11 @@ using System.Collections.Generic;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-namespace Codingame.Easy
+namespace Codingame.Easy.MarsLanderLvl1
 {
-    class SolutionE4
+    class Solution
     {
-        public static void MainFunction()
+        public static void Main(string[] args)
         {
             string[] inputs;
             int surfaceN = int.Parse(Console.ReadLine()); // the number of points used to draw the surface of Mars.
